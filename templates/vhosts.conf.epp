@@ -1,0 +1,5 @@
+Listen <%= $pache::vhosts_port %>
+<VirtualHost *:<%= $pache::vhosts_port %>>
+    DocumentRoot "<%= $pache::vhosts_root %>"
+    ServerName www.<%= apache::vhosts_servername %>
+</VirtualHost>
